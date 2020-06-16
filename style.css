@@ -1,12 +1,23 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 :root {
     --black: #202020;
     --white: #efefef;
+    --red:   #ef6666;
+    --green: #6abe6a;
+    --blue:  #6691ef;
 
-    /* Set background styles */
+    /* Set default styles */
     background-color: var(--black);
+    font-family: 'Inconsolata', monospace;
+    color: var(--white);
+
+    -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
 }
 
 * {
@@ -14,9 +25,18 @@
     margin:  0;
 }
 
+/*===================*
+ * Container styling *
+ *===================*/
+
 .page {
+    position: fixed;
+    left: 0;
+    top: 0;
+
     width: 100vw;
     height: 100vh;
+    box-sizing: border-box;
 
     display: flex;
     flex-flow: column nowrap;
@@ -27,14 +47,99 @@
     background-color: var(--black);
 }
 
+.page.red {
+    border: 2px solid var(--red);
+}
+
+.page.blue {
+    border: 2px solid var(--blue);
+}
+
 .hidden {
     display: none;
 }
 
 .title {
     display: inline-block;
-
+    text-align: center;
     font-size: 5rem;
-    font-family: 'Source Code Pro', monospace;
-    color: var(--white);
+}
+
+.menu {
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.transition {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 10;
+
+    transition: all linear 120ms;
+}
+
+.transition.hidden
+{
+    display: block;
+    opacity: 0;
+    z-index: -1;
+}
+
+.transition.black {
+    background-color: var(--black);
+}
+
+/*================*
+ * Button styling *
+ *================*/
+
+.button {
+    width: 5rem;
+
+    margin: 1rem;
+    padding: 0.8rem;
+
+    text-align: center;
+    background-color: var(--black);
+
+    cursor: pointer;
+}
+
+.button.red {
+    border: solid 2px var(--red);
+}
+
+.button.blue {
+    border: solid 2px var(--blue);
+}
+
+.corner.button {
+    position: fixed;
+    left: 4rem;
+    top: 0;
+
+    margin: 0;
+    padding: 1rem;
+    width: auto;
+
+    text-align: left;
+
+    border: none;
+    background-color: transparent;
+}
+
+.corner.button.home {
+    left: 0.2rem;
+}
+
+.button:hover {
+    text-decoration: underline;
 }

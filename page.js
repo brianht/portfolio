@@ -9,11 +9,13 @@ class Page
      * Logical representation of a SPA page
      * @param {String} location Where the page is located with regard to the URL
      * @param {HTMLElement} page Actual element containing the "page" content
+     * @param {HTMLElement} changeScreen Element that performs transition
      */
-    constructor(location, page)
+    constructor(location, page, changeScreen)
     {
         this.location = location;
         this.page = page;
+        this.changeScreen = changeScreen;
     }
 
     /**
@@ -22,14 +24,26 @@ class Page
      */
     hide(state)
     {
-        if (state)
-        {
-            this.page.classList.add("hidden");
-        }
-        else
-        {
-            this.page.classList.remove("hidden");
-        }
+        setTimeout(() => {
+            if (state)
+            {
+                this.page.classList.add("hidden");
+            }
+            else
+            {
+                this.page.classList.remove("hidden");
+            }
+        }, 120)
+        if (!state) this.transition();
+    }
+
+    /**
+     * Perform page transition
+     */
+    transition()
+    {
+        this.changeScreen.classList.remove("hidden");
+        setTimeout(() => this.changeScreen.classList.add("hidden"), 120);
     }
 }
 

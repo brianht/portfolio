@@ -3,22 +3,33 @@
 <head>
     <title>Brian Truong</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" type="module"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <html>
     <body>
+        <div id="transition" class="transition hidden black"></div>
+
         <div id="home-page" class="page hidden">
             <div class="title">brian truong</div>
+
+            <div class="menu">
+                <div class="experience button red">experience</div>
+                <div class="works button blue">works</div>
+            </div>
         </div>
 
-        <div id="experience-page" class="page hidden">
+        <div id="experience-page" class="page hidden red">
+            <div class="corner home button">home</div>
+            <div class="corner works button">works</div>
             <div class="title">experience</div>
         </div>
 
-        <div id="works-page" class="page hidden">
+        <div id="works-page" class="page hidden blue">
+            <div class="corner home button">home</div>
+            <div class="corner experience button">experience</div>
             <div class="title">works</div>
         </div>
     </body>
-
-    <script src="main.js" type="module"></script>
 </html>
