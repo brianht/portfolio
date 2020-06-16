@@ -62,7 +62,8 @@
 .title {
     display: inline-block;
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
+    margin: 2rem;
 }
 
 .menu {
@@ -95,6 +96,10 @@
 
 .transition.black {
     background-color: var(--black);
+}
+
+.description {
+    margin-bottom: 2rem;
 }
 
 /*================*
