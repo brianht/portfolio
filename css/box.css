@@ -39,7 +39,7 @@
 .box bar {
     height: 100%;
     box-sizing: border-box;
-    margin: 0 1rem;
+    margin: 0 1.5ch;
     border-left: dashed 2px var(--white);
 }
 
@@ -49,11 +49,6 @@
 
 .box.green bar {
     border-color: var(--green);
-}
-
-.box .info {
-    flex-basis: 1;
-    flex-grow: 1;
 }
 
 @media only screen and (max-width: 600px) {
@@ -68,6 +63,16 @@
     .box bar {
         display: none;
     }
+}
+
+.box .info {
+    flex-basis: 1;
+    flex-grow: 1;
+}
+
+.info {
+    width: 640px;
+    max-width: calc(100vw - 8rem);
 }
 
 .info > .header {

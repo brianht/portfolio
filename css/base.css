@@ -33,13 +33,13 @@
 }
 
 a, a:visited, a:link, a:active {
-    color: var(--grey);
+    color: var(--cyan);
     cursor: pointer;
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--cyan);
+    color: var(--white);
     text-decoration: underline;
 }
 

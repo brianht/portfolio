@@ -37,11 +37,6 @@ Array.from(document.getElementsByClassName("about button")).forEach(
     button => button.addEventListener("click", () => pageManager.setPage("#about"))
 );
 
-
-Array.from(document.getElementsByClassName("experience button")).forEach(
-    button => button.addEventListener("click", () => pageManager.setPage("#experience"))
-);
-
 Array.from(document.getElementsByClassName("works button")).forEach(
     button => button.addEventListener("click", () => pageManager.setPage("#works"))
 );
