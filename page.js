@@ -32,6 +32,7 @@ class Page
             else
             {
                 this.page.classList.remove("hidden");
+                this.page.scrollTop = 0;
             }
         }, 120)
         if (!state) this.transition();
