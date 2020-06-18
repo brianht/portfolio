@@ -61,3 +61,18 @@ ul {
     padding-left: 2ch;
     text-indent: -2ch;
  }
+
+/* Older browsers do not support CSS variables */
+#support {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: #202020;
+    color: #efefef;
+}

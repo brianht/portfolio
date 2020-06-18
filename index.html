@@ -17,6 +17,22 @@
     <body>
         <div id="transition" class="transition hidden black"></div>
 
+        <div id="support">
+            <noscript>
+                (x﹏x) Javascript not enabled!<br><br>This site requires Javascript.
+            </noscript>
+            <div id="no-support" class="hidden">
+                (x﹏x) Browser not supported!<br><br>Please use a modern web browser.
+            </div>
+            <script>
+                var supported = 'noModule' in HTMLScriptElement.prototype;
+                if (!supported)
+                {
+                    document.getElementById("no-support").classList.remove("hidden");
+                }
+            </script>
+        </div>
+
         <div id="home-page" class="page hidden">
             <div class="title">brian <br class="mobile">truong</div>
             <div class="description">
