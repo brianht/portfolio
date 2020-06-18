@@ -1,0 +1,57 @@
+/*================*
+ * Button styling *
+ *================*/
+
+ .menu {
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    width: 8rem;
+    height: 3rem;
+
+    margin: 1rem;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3rem;
+
+    background-color: var(--black);
+
+    cursor: pointer;
+}
+
+.button.red {
+    border: solid 2px var(--red);
+}
+
+.button.blue {
+    border: solid 2px var(--blue);
+}
+
+.corner.button {
+    position: fixed;
+    left: 5rem;
+    top: 0;
+
+    margin: 0;
+    padding: 1rem;
+    width: auto;
+
+    text-align: left;
+
+    border: none;
+    background-color: transparent;
+}
+
+.corner.button.home {
+    left: 1rem;
+}
+
+.button:hover {
+    text-decoration: underline;
+}

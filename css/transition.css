@@ -1,0 +1,27 @@
+/*====================================*
+ * Styles for page transition element *
+ *====================================*/
+
+.transition {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 10;
+
+    transition: all linear 120ms;
+}
+
+.transition.hidden
+{
+    display: block;
+    opacity: 0;
+    z-index: -1;
+}
+
+.transition.black {
+    background-color: var(--black);
+}

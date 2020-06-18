@@ -1,0 +1,71 @@
+/*==========================*
+ * Styles for display boxes *
+ *==========================*/
+
+.box {
+    margin: 2rem;
+    padding: 0.8rem;
+
+    width: 640px;
+    max-width: calc(100vw - 8rem);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    border: dashed 2px var(--white);
+}
+
+.box.red {
+    border-color: var(--red);
+}
+
+.box img {
+    height: 128px;
+    width: 128px;
+    object-fit: contain;
+}
+
+.box bar {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 0.8rem;
+    border-left: dashed 2px var(--white);
+}
+
+.box.red bar {
+    border-color: var(--red);
+}
+
+.box .info {
+    flex-basis: 1;
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .box {
+        flex-wrap: wrap;
+    }
+
+    .box img {
+        margin-bottom: 1rem;
+    }
+
+    .box bar {
+        display: none;
+    }
+}
+
+.employment.info > .header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-style: italic;
+}
+
+.employment.info > .description {
+    margin: 1rem 0;
+    color: var(--l-grey);
+}

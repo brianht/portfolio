@@ -1,0 +1,59 @@
+/*=====================*
+ * Styles for SPA page *
+ *=====================*/
+
+.page {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--black);
+}
+
+.page.scroll {
+    justify-content: flex-start;
+    position: relative;
+    padding: 4rem 0;
+}
+
+.page.red {
+    border: 2px solid var(--red);
+}
+
+.page.blue {
+    border: 2px solid var(--blue);
+}
+
+.scroll {
+    overflow-y: scroll;
+}
+
+.hidden {
+    display: none;
+}
+
+.title {
+    display: inline-block;
+    text-align: center;
+    font-size: 3rem;
+    margin: 4rem 0 2rem 0;
+}
+
+fade {
+    position: fixed;
+    display: block;
+    top: 2px;
+    height: 12rem;
+    width: 80%;
+    background-image: linear-gradient(var(--black), transparent);
+}
