@@ -10,10 +10,10 @@
     --red:   #ef6666;
     --green: #6abe6a;
     --blue:  #6691ef;
-    --grey:  #888888;
+    --grey:  #767676;
     --cyan:  #66cfef;
-    --l-grey: #bbbbbb;
-    --d-grey: #444444;
+    --lgrey: #bbbbbb;
+    --dblack: #181818;
 
     /* Set default styles */
     background-color: var(--black);
@@ -44,11 +44,11 @@ a:hover {
 }
 
 *::-webkit-scrollbar {
-    width: 0.6rem;
+    width: 0.9rem;
 }
 
 *::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px black;
+    background-color: var(--dblack);
 }
 
 *::-webkit-scrollbar-thumb {

@@ -23,7 +23,6 @@
 .page.scroll {
     justify-content: flex-start;
     position: relative;
-    padding: 4rem 0;
 }
 
 .page.red {
@@ -49,11 +48,22 @@
     margin: 4rem 0 2rem 0;
 }
 
-fade {
+.fade {
     position: fixed;
-    display: block;
-    top: 2px;
-    height: 12rem;
+    height: 8rem;
     width: 80%;
+}
+
+.top.fade {
+    top: 2px;
     background-image: linear-gradient(var(--black), transparent);
+}
+
+.bottom.fade {
+    bottom: 2px;
+    background-image: linear-gradient(transparent, var(--black));
+}
+
+.padder {
+    padding: 2rem;
 }
