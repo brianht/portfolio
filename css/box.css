@@ -65,14 +65,16 @@
     }
 }
 
-.box .info {
-    flex-basis: 1;
-    flex-grow: 1;
-}
-
 .info {
     width: 640px;
     max-width: calc(100vw - 8rem);
+    margin-bottom: 1rem;
+}
+
+.box .info {
+    flex-basis: 1;
+    flex-grow: 1;
+    margin: 0;
 }
 
 .info > .header {
