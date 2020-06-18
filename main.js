@@ -3,7 +3,7 @@
  *=======================*/
 
 
- import { Page, PageManager } from "./page.js";
+import { Page, PageManager } from "./page.js";
 
 
 const pageManager = new PageManager([
