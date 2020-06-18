@@ -29,6 +29,10 @@
     border: 2px solid var(--red);
 }
 
+.page.green {
+    border: 2px solid var(--green);
+}
+
 .page.blue {
     border: 2px solid var(--blue);
 }
@@ -66,4 +70,23 @@
 
 .padder {
     padding: 2rem;
+}
+
+.page > .description {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.page > .description.short {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 491px) {
+    .mobile {
+        display: block;
+    }
 }

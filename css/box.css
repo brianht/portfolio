@@ -21,6 +21,14 @@
     border-color: var(--red);
 }
 
+.box.green {
+    border-color: var(--green);
+}
+
+.box.blue {
+    border-color: var(--blue);
+}
+
 .box img {
     height: 128px;
     width: 128px;
@@ -34,8 +42,8 @@
     border-left: dashed 2px var(--white);
 }
 
-.box.red bar {
-    border-color: var(--red);
+.box.green bar {
+    border-color: var(--green);
 }
 
 .box .info {

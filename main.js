@@ -13,6 +13,11 @@ const pageManager = new PageManager([
         document.getElementById("transition")
     ),
     new Page(
+        "#about",
+        document.getElementById("about-page"),
+        document.getElementById("transition")
+    ),
+    new Page(
         "#experience",
         document.getElementById("experience-page"),
         document.getElementById("transition")
@@ -24,6 +29,14 @@ const pageManager = new PageManager([
     )
 ]);
 
+Array.from(document.getElementsByClassName("home button")).forEach(
+    button => button.addEventListener("click", () => pageManager.setPage("#home"))
+);
+
+Array.from(document.getElementsByClassName("about button")).forEach(
+    button => button.addEventListener("click", () => pageManager.setPage("#about"))
+);
+
 
 Array.from(document.getElementsByClassName("experience button")).forEach(
     button => button.addEventListener("click", () => pageManager.setPage("#experience"))
@@ -31,8 +44,4 @@ Array.from(document.getElementsByClassName("experience button")).forEach(
 
 Array.from(document.getElementsByClassName("works button")).forEach(
     button => button.addEventListener("click", () => pageManager.setPage("#works"))
-);
-
-Array.from(document.getElementsByClassName("home button")).forEach(
-    button => button.addEventListener("click", () => pageManager.setPage("#home"))
 );

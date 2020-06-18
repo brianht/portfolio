@@ -18,28 +18,44 @@
         <div id="transition" class="transition hidden black"></div>
 
         <div id="home-page" class="page hidden">
-            <div class="title">brian truong</div>
-
+            <div class="title">brian <br class="mobile">truong</div>
             <div class="description">
-                software engineering + visual arts
+                software engineering <br class="mobile">+<br class="mobile"> visual arts
             </div>
 
             <div class="menu">
-                <div class="experience button red">experience</div>
+                <div class="about button red">about</div>
+                <div class="experience button green">experience</div>
                 <div class="works button blue">works</div>
             </div>
         </div>
 
-        <div id="experience-page" class="scroll page hidden red">
+        <div id="about-page" class="page hidden red">
             <div class="top fade"></div>
             <div class="bottom fade"></div>
 
-            <div class="corner home button">home</div>
-            <div class="corner works button">works</div>
+            <div class="corner">
+                <div class="home button">home</div>
+                <div class="about button disabled">[about]</div>
+                <div class="experience button">experience</div>
+                <div class="works button">works</div>
+            </div>
+        </div>
+
+        <div id="experience-page" class="scroll page hidden green">
+            <div class="top fade"></div>
+            <div class="bottom fade"></div>
+
+            <div class="corner">
+                <div class="home button">home</div>
+                <div class="about button">about</div>
+                <div class="experience button disabled">[experience]</div>
+                <div class="works button">works</div>
+            </div>
 
             <div class="padder"></div>
 
-            <div class="box red">
+            <div class="box green">
                 <a href="https://www.intel.com/">
                     <img src="media/intel.png" alt="Intel logo">
                 </a>
@@ -65,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="box red">
+            <div class="box green">
                 <a href="https://www.cdkglobal.com/">
                     <img src="media/cdk.png" alt="CDK logo">
                 </a>
@@ -85,11 +101,11 @@
                     </div>
                     <div class="description">
                         Tech:
-                        <a href="https://angularjs.org/">AngularJS</a>,
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>,
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>,
-                        <a href="https://www.mongodb.com/">MongoDB</a>,
-                        <a href="https://nodejs.org/en/">NodeJS</a>
+                        <a href="https://angularjs.org/" target="_blank">AngularJS</a>,
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a>,
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>,
+                        <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>,
+                        <a href="https://nodejs.org/en/" target="_blank">NodeJS</a>
                     </div>
 
                     <br>
@@ -109,9 +125,9 @@
                     </div>
                     <div class="description">
                         Tech:
-                        <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a>,
-                        <a href="https://github.com/Moq/moq4/wiki/Quickstart">Moq</a>,
-                        <a href="https://aws.amazon.com/">AWS</a>
+                        <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a>,
+                        <a href="https://github.com/Moq/moq4/wiki/Quickstart" target="_blank">Moq</a>,
+                        <a href="https://aws.amazon.com/" target="_blank">AWS</a>
                     </div>
 
                     <br>
@@ -125,14 +141,14 @@
                     </div>
                     <div class="description">
                         Tech:
-                        <a href="https://angularjs.org/">AngularJS</a>,
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>,
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+                        <a href="https://angularjs.org/" target="_blank">AngularJS</a>,
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a>,
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
                     </div>
                 </div>
             </div>
 
-            <div class="box red">
+            <div class="box green">
                 <a href="https://www.intel.com/">
                     <img src="media/intel.png" alt="Intel logo">
                 </a>
@@ -149,8 +165,8 @@
                     </div>
                     <div class="description">
                         Tech:
-                        <a href="https://www.blender.org/">Blender</a>,
-                        <a href="https://www.arduino.cc/">Arduino</a>
+                        <a href="https://www.blender.org/" target="_blank">Blender</a>,
+                        <a href="https://www.arduino.cc/" target="_blank">Arduino</a>
                     </div>
                 </div>
             </div>
@@ -159,9 +175,15 @@
         </div>
 
         <div id="works-page" class="page hidden blue">
-            <div class="corner home button">home</div>
-            <div class="corner experience button">experience</div>
-            <div class="title">works</div>
+            <div class="top fade"></div>
+            <div class="bottom fade"></div>
+
+            <div class="corner">
+                <div class="home button">home</div>
+                <div class="about button">about</div>
+                <div class="experience button">experience</div>
+                <div class="works button disabled">[works]</div>
+            </div>
         </div>
     </body>
 </html>

@@ -58,7 +58,6 @@ class PageManager
     constructor(pages)
     {
         this.pages = pages;
-        this.currentPage = this.pages[0];
         this.setPage(window.location.hash)
         window.addEventListener("hashchange", () => this.setPage(window.location.hash));
     }
@@ -74,7 +73,7 @@ class PageManager
         {
             if (page.location === location) return page;
         }
-        return null;
+        return this.pages[0];
     }
 
     /**
@@ -83,11 +82,13 @@ class PageManager
      */
     setPage(location)
     {
-        this.currentPage.hide(true);
+        if (this.currentPage)
+        {
+            if (this.currentPage.location === location) return;
+            this.currentPage.hide(true);
+        }
 
-        const page = this.getPage(location);
-        if (page) this.currentPage = page;
-
+        this.currentPage = this.getPage(location);
         window.location.hash = this.currentPage.location;
         this.currentPage.hide(false);
     }
