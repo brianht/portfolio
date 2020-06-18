@@ -54,3 +54,10 @@ a:hover {
 *::-webkit-scrollbar-thumb {
     background-color: var(--grey);
 }
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 2ch;
+    text-indent: -2ch;
+ }
