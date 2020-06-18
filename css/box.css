@@ -4,7 +4,7 @@
 
 .box {
     margin: 2rem;
-    padding: 0.8rem;
+    padding: 1rem;
 
     width: 640px;
     max-width: calc(100vw - 8rem);
@@ -15,6 +15,7 @@
     align-items: center;
 
     border: dashed 2px var(--white);
+    box-sizing: border-box;
 }
 
 .box.red {
@@ -38,8 +39,12 @@
 .box bar {
     height: 100%;
     box-sizing: border-box;
-    margin: 0 0.8rem;
+    margin: 0 1rem;
     border-left: dashed 2px var(--white);
+}
+
+.box.red bar {
+    border-color: var(--red);
 }
 
 .box.green bar {
@@ -65,7 +70,7 @@
     }
 }
 
-.employment.info > .header {
+.info > .header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -73,7 +78,7 @@
     font-style: italic;
 }
 
-.employment.info > .description {
-    margin: 1rem 0;
+.info > .description {
+    margin-top: 1rem;
     color: var(--lgrey);
 }

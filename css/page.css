@@ -52,10 +52,21 @@
     margin: 4rem 0 2rem 0;
 }
 
+.section {
+    display: inline-block;
+
+    width: 640px;
+    max-width: calc(100vw - 8rem);
+    margin: 2rem;
+
+    font-size: 1.8rem;
+    text-align: left;
+}
+
 .fade {
     position: fixed;
     height: 8rem;
-    width: 80%;
+    width: calc(100vw - 2rem);
 }
 
 .top.fade {
@@ -69,7 +80,7 @@
 }
 
 .padder {
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .page > .description {
