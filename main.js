@@ -6,6 +6,8 @@
 import { Page, PageManager } from "./page.js";
 
 
+// Set up page manager
+
 const pageManager = new PageManager([
     new Page(
         "#home",
@@ -15,11 +17,6 @@ const pageManager = new PageManager([
     new Page(
         "#about",
         document.getElementById("about-page"),
-        document.getElementById("transition")
-    ),
-    new Page(
-        "#experience",
-        document.getElementById("experience-page"),
         document.getElementById("transition")
     ),
     new Page(
@@ -40,3 +37,11 @@ Array.from(document.getElementsByClassName("about button")).forEach(
 Array.from(document.getElementsByClassName("works button")).forEach(
     button => button.addEventListener("click", () => pageManager.setPage("#works"))
 );
+
+// Set default link behavior to new tab
+
+Array.from(document.getElementsByTagName("a")).forEach(
+    link => {
+        if (link.getAttribute("href")[0] !== "#") link.setAttribute("target", "_blank");
+    }
+)
