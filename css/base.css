@@ -19,12 +19,14 @@
     background-color: var(--black);
     font-family: 'Overpass Mono', monospace;
     color: var(--white);
+}
 
+img, .button, .corner {
     -moz-user-select: -moz-none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 * {
@@ -70,6 +72,14 @@ c.red {
 
 c.blue {
     color: var(--blue);
+}
+
+::selection {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+a::selection {
+    color: var(--cyan);
 }
 
 /* Older browsers do not support CSS variables */

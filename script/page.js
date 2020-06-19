@@ -10,12 +10,14 @@ class Page
      * @param {String} location Where the page is located with regard to the URL
      * @param {HTMLElement} page Actual element containing the "page" content
      * @param {HTMLElement} changeScreen Element that performs transition
+     * @param {Function} resetter Function to run to reset the page state
      */
-    constructor(location, page, changeScreen)
+    constructor(location, page, changeScreen, resetter=null)
     {
         this.location = location;
         this.page = page;
         this.changeScreen = changeScreen;
+        this.resetter = resetter;
     }
 
     /**
@@ -33,6 +35,7 @@ class Page
             {
                 this.page.classList.remove("hidden");
                 this.page.scrollTop = 0;
+                if (this.resetter) this.resetter();
             }
         }, 120)
         if (!state) this.transition();
