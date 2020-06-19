@@ -2,6 +2,10 @@
  * Styles for display boxes *
  *==========================*/
 
+/* NOTE:
+ * Placed boxes in .container divs so to
+ * fix iOS flexbox height rendering issues
+ */
 .box {
     margin: 2rem;
     padding: 1rem;
