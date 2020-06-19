@@ -36,6 +36,7 @@ a, a:visited, a:link, a:active {
     color: var(--cyan);
     cursor: pointer;
     text-decoration: none;
+    transition: color linear 60ms;
 }
 
 a:hover {
@@ -61,7 +62,15 @@ ul {
     margin-left: 0;
     padding-left: 2ch;
     text-indent: -2ch;
- }
+}
+
+c.red {
+    color: var(--red);
+}
+
+c.blue {
+    color: var(--blue);
+}
 
 /* Older browsers do not support CSS variables */
 #support {

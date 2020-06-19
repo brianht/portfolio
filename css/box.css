@@ -78,6 +78,7 @@
     height: 256px;
     width: 256px;
     border: solid 1px transparent;
+    transition: border linear 60ms;
 }
 
 .box.blue img:hover {

@@ -45,3 +45,9 @@ Array.from(document.getElementsByTagName("a")).forEach(
         if (link.getAttribute("href")[0] !== "#") link.setAttribute("target", "_blank");
     }
 )
+
+// Disable image dragging
+
+Array.from(document.getElementsByTagName("img")).forEach(
+    image => image.setAttribute("draggable", "false")
+)

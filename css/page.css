@@ -67,6 +67,7 @@
     position: fixed;
     height: 8rem;
     width: calc(100vw - 2rem);
+    pointer-events: none;
 }
 
 .top.fade {
