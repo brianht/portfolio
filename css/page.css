@@ -3,13 +3,12 @@
  *=====================*/
 
 .page {
-    position: fixed;
+    position: relative;
     left: 0;
     top: 0;
 
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
+    width: calc(100vw - 4px);
+    height: calc(100vh - 4px);
 
     display: flex;
     flex-flow: column nowrap;
@@ -23,6 +22,7 @@
 .page.scroll {
     justify-content: flex-start;
     position: relative;
+    overflow-x: hidden;
 }
 
 .page.red {
@@ -63,21 +63,30 @@
     text-align: left;
 }
 
-.fade {
-    position: fixed;
-    height: 8rem;
-    width: calc(100vw - 2rem);
+fade {
+    position: sticky;
+
+    margin-top: -8rem;
+
+    background-image: url("../media/gradient.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+
     pointer-events: none;
+
+    z-index: 1;
 }
 
-.top.fade {
-    top: 2px;
-    background-image: linear-gradient(var(--black), transparent);
+fade.top {
+    top: 0;
+    padding: 4rem 50vw;
 }
 
-.bottom.fade {
-    bottom: 2px;
-    background-image: linear-gradient(transparent, var(--black));
+fade.bottom {
+    top: calc(100vh - 8rem);
+    padding: 4rem 50vw;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
 }
 
 .padder {
