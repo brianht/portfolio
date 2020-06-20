@@ -70,8 +70,6 @@ fade {
     background-size: contain;
 
     pointer-events: none;
-
-    z-index: 1;
 }
 
 fade.top {
