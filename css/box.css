@@ -50,7 +50,7 @@
 }
 
 .box bar {
-    height: 100%;
+    align-self: stretch;
     box-sizing: border-box;
     margin: 0 1.5ch;
     border-left: dashed 2px var(--white);
