@@ -46,15 +46,12 @@
 }
 
 .title {
-    display: inline-block;
     text-align: center;
     font-size: 3.2rem;
-    margin: 4rem 0 2rem 0;
+    margin: 2rem;
 }
 
 .section {
-    display: inline-block;
-
     width: 640px;
     max-width: calc(100vw - 6rem);
     margin: 2rem;
