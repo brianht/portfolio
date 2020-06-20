@@ -3,7 +3,7 @@
  *================*/
 
 .menu {
-    margin: 2rem 0;
+    margin: 3rem 0 2rem;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -11,10 +11,10 @@
 }
 
 .button {
-    width: 8rem;
+    width: 7rem;
     height: 3rem;
 
-    margin: 1rem;
+    margin: 0 1rem;
 
     text-align: center;
     vertical-align: middle;

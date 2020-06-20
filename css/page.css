@@ -57,7 +57,7 @@
 .title {
     text-align: center;
     font-size: 3rem;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 1rem 0;
     line-height: 3.5rem;
 }
 
@@ -100,10 +100,6 @@ fade.bottom {
 .page > .description {
     text-align: center;
     line-height: 1.5rem;
-}
-
-.description.mobile {
-    line-height: 1.3rem;
 }
 
 .page > .description.short {
