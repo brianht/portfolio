@@ -16,7 +16,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
 
     border: dashed 2px var(--white);
     box-sizing: border-box;
