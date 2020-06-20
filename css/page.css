@@ -3,7 +3,7 @@
  *=====================*/
 
 .page {
-    position: relative;
+    position: fixed;
     left: 0;
     top: 0;
 
@@ -74,6 +74,7 @@ fade {
     position: sticky;
 
     margin-top: -8rem;
+    padding: 4rem calc(50vw - 1rem);
 
     background-image: url("../media/gradient.png");
     background-repeat: repeat-x;
@@ -84,12 +85,10 @@ fade {
 
 fade.top {
     top: 0;
-    padding: 4rem 50vw;
 }
 
 fade.bottom {
     top: calc(100vh - 8rem);
-    padding: 4rem 50vw;
     -webkit-transform: scaleY(-1);
     transform: scaleY(-1);
 }
