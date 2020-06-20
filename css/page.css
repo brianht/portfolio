@@ -45,10 +45,19 @@
     display: none;
 }
 
+#logo {
+    height: 4rem;
+}
+
+.logo-bottom {
+    height: 1rem;
+    margin: 1rem;
+}
+
 .title {
     text-align: center;
-    font-size: 3.2rem;
-    margin-bottom: 2rem;
+    font-size: 3rem;
+    margin: 1rem 0 2rem 0;
 }
 
 .section {

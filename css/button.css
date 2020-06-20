@@ -2,7 +2,7 @@
  * Button styling *
  *================*/
 
- .menu {
+.menu {
     margin: 2rem 0;
     display: flex;
     flex-flow: row wrap;
