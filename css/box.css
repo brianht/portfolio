@@ -87,6 +87,7 @@
 
 .box .info {
     flex-grow: 1;
+    align-self: stretch;
     margin: 0;
     max-width: 100%;
 }
