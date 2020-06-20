@@ -101,8 +101,15 @@ fade.bottom {
     display: none;
 }
 
+.not.mobile {
+    display: block;
+}
+
 @media only screen and (max-width: 491px) {
     .mobile {
         display: block;
+    }
+    .not.mobile {
+        display: none;
     }
 }
