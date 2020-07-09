@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "A Knight in the Dungeon",
+"productVersion": "0.2",
+"dataUrl": "Knight in the Dungeon Final Build.data.unityweb",
+"wasmCodeUrl": "Knight in the Dungeon Final Build.wasm.code.unityweb",
+"wasmFrameworkUrl": "Knight in the Dungeon Final Build.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.1.14f1"
+}
