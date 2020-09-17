@@ -3,122 +3,122 @@
  *=====================*/
 
 .page {
-    position: fixed;
-    left: 0;
-    top: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
 
-    width: calc(100vw - 4px);
-    height: calc(100vh - 4px);
+  width: calc(100vw - 4px);
+  height: calc(100vh - 4px);
 
-    display: flex;
-    flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 .page.scroll {
-    justify-content: flex-start;
-    position: relative;
-    overflow-x: hidden;
+  justify-content: flex-start;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .page.red {
-    border: 2px solid var(--red);
+  border: 2px solid var(--red);
 }
 
 .page.green {
-    border: 2px solid var(--green);
+  border: 2px solid var(--green);
 }
 
 .page.blue {
-    border: 2px solid var(--blue);
+  border: 2px solid var(--blue);
 }
 
 .scroll {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 #logo {
-    height: 4rem;
+  height: 4rem;
 }
 
 .logo-bottom {
-    height: 1rem;
-    margin: 1rem;
+  height: 1rem;
+  margin: 1rem;
 }
 
 .title {
-    text-align: center;
-    font-size: 3rem;
-    margin: 1rem 0 1rem 0;
-    line-height: 3.5rem;
+  text-align: center;
+  font-size: 3rem;
+  margin: 1rem 0 1rem 0;
+  line-height: 3.5rem;
 }
 
 .section {
-    width: 640px;
-    max-width: calc(100vw - 6rem);
-    margin: 2rem;
+  width: 640px;
+  max-width: calc(100vw - 6rem);
+  margin: 2rem;
 
-    font-size: 1.8rem;
-    text-align: left;
+  font-size: 1.8rem;
+  text-align: left;
 }
 
 fade {
-    position: sticky;
+  position: sticky;
 
-    margin-top: -8rem;
-    padding: 4rem calc(50vw - 1rem);
+  margin-top: -8rem;
+  padding: 4rem calc(50vw - 1rem);
 
-    background-image: url("../media/gradient.png");
-    background-repeat: repeat-x;
-    background-size: contain;
+  background-image: url("../media/gradient.png");
+  background-repeat: repeat-x;
+  background-size: contain;
 
-    pointer-events: none;
+  pointer-events: none;
 }
 
 fade.top {
-    top: 0;
+  top: 0;
 }
 
 fade.bottom {
-    top: calc(100vh - 8rem);
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
+  top: calc(100vh - 8rem);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
 }
 
 .padder {
-    padding: 3rem;
+  padding: 3rem;
 }
 
 .page > .description {
-    text-align: center;
-    line-height: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 .page > .description.short {
-    display: none;
+  display: none;
 }
 
 .mobile {
-    display: none;
+  display: none;
 }
 
 .not.mobile {
-    display: block;
+  display: block;
 }
 
 @media only screen and (max-width: 491px) {
-    .mobile {
-        display: block;
-    }
-    .not.mobile {
-        display: none;
-    }
+  .mobile {
+    display: block;
+  }
+  .not.mobile {
+    display: none;
+  }
 }

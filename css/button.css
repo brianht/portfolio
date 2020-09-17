@@ -3,85 +3,86 @@
  *================*/
 
 .menu {
-    margin: 3rem 0 2rem;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
+  margin: 3rem 0 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .button {
-    width: 7rem;
-    height: 3rem;
+  width: 7rem;
+  height: 3rem;
 
-    margin: 0 1rem;
+  margin: 0 1rem;
 
-    text-align: center;
-    vertical-align: middle;
-    line-height: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 3rem;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .button.red {
-    border: solid 2px var(--red);
+  border: solid 2px var(--red);
 }
 
 .button.green {
-    border: solid 2px var(--green);
+  border: solid 2px var(--green);
 }
 
 .button.blue {
-    border: solid 2px var(--blue);
+  border: solid 2px var(--blue);
 }
 
 .corner {
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    text-align: left;
+  text-align: left;
 
-    border: none;
-    background-color: transparent;
+  border: none;
+  background-color: transparent;
 
-    z-index: 10;
+  z-index: 10;
 }
 
 .corner > .button {
-    display: inline-block;
-    margin: 0;
+  display: inline-block;
+  margin: 0;
 }
 
 .corner > .home.button {
-    width: 6ch;
+  width: 6ch;
 }
 
-.corner > .about.button, .corner .works.button {
-    width: 7ch;
+.corner > .about.button,
+.corner .works.button {
+  width: 7ch;
 }
 
 .corner > .experience.button {
-    width: 12ch;
+  width: 12ch;
 }
 
 .button:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .button.disabled {
-    cursor: auto;
+  cursor: auto;
 }
 
 .button.disabled:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 766px) {
-    .corner {
-        left: auto;
-    }
+  .corner {
+    left: auto;
+  }
 }

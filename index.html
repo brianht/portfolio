@@ -1,555 +1,606 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Brian Truong</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <title>Brian Truong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/page.css">
-    <link rel="stylesheet" href="css/transition.css">
-    <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/box.css">
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/page.css" />
+  <link rel="stylesheet" href="css/transition.css" />
+  <link rel="stylesheet" href="css/button.css" />
+  <link rel="stylesheet" href="css/box.css" />
 
-    <script src="script/main.js" type="module"></script>
+  <script src="script/main.js" type="module"></script>
 </head>
 
 <html>
-    <body>
-        <div id="transition" class="transition hidden black"></div>
+  <body>
+    <div id="transition" class="transition hidden black"></div>
 
-        <div id="support">
-            <noscript>
-                (x﹏x) Javascript not enabled!<br><br>This site requires Javascript.
-            </noscript>
-            <div id="no-support" class="hidden">
-                (x﹏x) Browser not supported!<br><br>Please use a modern web browser.
-            </div>
-            <script>
-                var supported = 'noModule' in HTMLScriptElement.prototype;
-                if (!supported)
-                {
-                    document.getElementById("no-support").classList.remove("hidden");
-                }
-            </script>
+    <div id="support">
+      <noscript>
+        (x﹏x) Javascript not enabled!<br /><br />This site requires Javascript.
+      </noscript>
+      <div id="no-support" class="hidden">
+        (x﹏x) Browser not supported!<br /><br />Please use a modern web
+        browser.
+      </div>
+      <script>
+        var supported = "noModule" in HTMLScriptElement.prototype;
+        if (!supported) {
+          document.getElementById("no-support").classList.remove("hidden");
+        }
+      </script>
+    </div>
+
+    <div id="home-page" class="page hidden">
+      <img id="logo" src="media/logo-square.svg" alt="Personal logo" />
+
+      <div class="title not mobile">brian truong</div>
+      <div class="title mobile">brian<br />truong</div>
+      <div class="description not mobile">
+        software engineering + visual arts
+      </div>
+      <div class="description mobile">
+        software engineering<br />visual arts
+      </div>
+
+      <div class="menu">
+        <div class="about button red">about</div>
+        <div class="works button blue">works</div>
+      </div>
+
+      <a id="contact">contact</a>
+    </div>
+
+    <div id="about-page" class="scroll page hidden red">
+      <fade class="top"></fade>
+      <fade class="bottom"></fade>
+
+      <div class="corner">
+        <div class="home button">home</div>
+        <div class="about button disabled">
+          <c class="red">[</c>about<c class="red">]</c>
         </div>
+        <div class="works button">works</div>
+      </div>
 
-        <div id="home-page" class="page hidden">
-            <img id="logo" src="media/logo-square.svg" alt="Personal logo">
+      <div class="padder"></div>
 
-            <div class="title not mobile">brian truong</div>
-            <div class="title mobile">brian<br>truong</div>
-            <div class="description not mobile">
-                software engineering + visual arts
-            </div>
-            <div class="description mobile">
-                software engineering<br>visual arts
-            </div>
+      <div class="section">Hello World!</div>
 
-            <div class="menu">
-                <div class="about button red">about</div>
-                <div class="works button blue">works</div>
-            </div>
-
-            <a id="contact">contact</a>
+      <div class="info">
+        <div class="description">
+          I'm a software engineer working at Microsoft.
         </div>
-
-        <div id="about-page" class="scroll page hidden red">
-            <fade class="top"></fade>
-            <fade class="bottom"></fade>
-
-            <div class="corner">
-                <div class="home button">home</div>
-                <div class="about button disabled">
-                    <c class="red">[</c>about<c class="red">]</c>
-                </div>
-                <div class="works button">works</div>
-            </div>
-
-            <div class="padder"></div>
-
-            <div class="section">Hello World!</div>
-
-            <div class="info">
-                <div class="description">
-                    I'm a software engineer working at Microsoft.
-                </div>
-                <div class="description">
-                    I also like making art, some of which can be found <a href="#works">here</a>.
-                    In my spare time, I like volunteering, reading, and playing games.
-                </div>
-                <div class="description">
-                    My interests include:
-                </div>
-                <div class="description">
-                    <ul>
-                        <li>* Full stack development</li>
-                        <li>* Game development + design</li>
-                        <li>* Internet of things</li>
-                        <li>* Deep learning AI</li>
-                        <li>* Cloud computing</li>
-                        <li>* UX/UI design</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="section">Education</div>
-
-            <div class="container">
-                <div class="box red">
-                    <a href="https://cs.uoregon.edu/">
-                        <img src="media/uo.png" alt="UO logo">
-                    </a>
-                    <bar></bar>
-                    <div class="info">
-                        <div class="header">
-                            <div class="label">University of Oregon</div>
-                            <div class="date">2017-20</div>
-                        </div>
-                        <div class="description">
-                            Bachelor of Science, Computer Science
-                        </div>
-                        <div class="description">
-                            Minor: Multimedia
-                        </div>
-                        <div class="description">
-                            <ul>
-                                <li>* Presidential Scholarship</li>
-                                <li>* Summit Scholarship</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">Work Experience</div>
-
-            <div class="container">
-                <div class="box red">
-                    <a href="https://www.microsoft.com/">
-                        <img src="media/msft.png" alt="Microsoft logo">
-                    </a>
-                    <bar></bar>
-                    <div class="info">
-                        <div class="header">
-                            <div class="label">Software Engineer</div>
-                            <div class="date">
-                                2020-Now
-                            </div>
-                        </div>
-                        <div class="description">
-                            Making cool stuff as part of the Business Applications Group.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="box red">
-                    <a href="https://www.intel.com/">
-                        <img src="media/intel.png" alt="Intel logo">
-                    </a>
-                    <bar></bar>
-                    <div class="info">
-                        <div class="header">
-                            <div class="label">Software Engineering Intern</div>
-                            <div class="date">Jun-Dec 2019</div>
-                        </div>
-                        <div class="description">
-                            Developed a microservice agent that connects devices to
-                            various internet of things cloud services, allowing for
-                            telemetry reports and over the air updates of the device.
-                        </div>
-                        <div class="description">
-                            Tech:
-                            <a href="https://www.python.org/">Python</a>,
-                            <a href="http://www.eclipse.org/paho/">MQTT</a>,
-                            <a href="https://azure.microsoft.com/en-us/services/iot-central/">Azure</a>,
-                            <a href="https://www.telit.com/m2m-iot-products/iot-platforms/telit-iot-portal/">Telit</a>,
-                            <a href="https://thingsboard.io/">ThingsBoard</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="box red">
-                    <a href="https://www.cdkglobal.com/">
-                        <img src="media/cdk.png" alt="CDK logo">
-                    </a>
-                    <bar></bar>
-                    <div class="info">
-                        <div class="header">
-                            <div class="label">Software Development Intern</div>
-                            <div class="date">Jun-Aug 2018</div>
-                        </div>
-                        <div class="description">
-                            Designed and developed dashboards for administrators to quickly
-                            audit user permissions and activities.
-                        </div>
-                        <div class="description">
-                            Refactored existing dashboards to improve performance and ensure
-                            visual design language conformity.
-                        </div>
-                        <div class="description">
-                            Tech:
-                            <a href="https://angularjs.org/">AngularJS</a>,
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>,
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>,
-                            <a href="https://www.mongodb.com/">MongoDB</a>,
-                            <a href="https://nodejs.org/en/">NodeJS</a>
-                        </div>
-
-                        <br><br>
-
-                        <div class="header">
-                            <div class="label">Software Development Intern</div>
-                            <div class="date">Jun-Sep 2017</div>
-                        </div>
-                        <div class="description">
-                            Developed a microservice with a RESTful API to manage images from
-                            customer repair orders on the cloud, integrating it into
-                            preexisting software, and covering it with comprehensive unit tests.
-                        </div>
-                        <div class="description">
-                            Additionally, proactively prepared and presented a
-                            cost-benefit analysis of moving towards serverless solutions.
-                        </div>
-                        <div class="description">
-                            Tech:
-                            <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a>,
-                            <a href="https://github.com/Moq/moq4/wiki/Quickstart">Moq</a>,
-                            <a href="https://aws.amazon.com/">AWS</a>
-                        </div>
-
-                        <br><br>
-
-                        <div class="header">
-                            <div class="label">Software Development Intern</div>
-                            <div class="date">Jun-Sep 2016</div>
-                        </div>
-                        <div class="description">
-                            Developed a modular Google Chrome start page to bolster employee productivity
-                        </div>
-                        <div class="description">
-                            Tech:
-                            <a href="https://angularjs.org/">AngularJS</a>,
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>,
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="box red">
-                    <a href="https://www.intel.com/">
-                        <img src="media/intel.png" alt="Intel logo">
-                    </a>
-                    <bar></bar>
-                    <div class="info">
-                        <div class="header">
-                            <div class="label">User Experience Intern</div>
-                            <div class="date">Aug 2015</div>
-                        </div>
-                        <div class="description">
-                            As part of a team, designed a wearable device that helps users
-                            track and use medication. 3D modelled + printed the components,
-                            integrating them with an Arduino and electrical components.
-                        </div>
-                        <div class="description">
-                            Tech:
-                            <a href="https://www.blender.org/">Blender</a>,
-                            <a href="https://www.arduino.cc/">Arduino</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">Community Engagement</div>
-
-            <div class="container">
-                <div class="box red">
-                    <a href="https://rotaractuo.weebly.com/">
-                        <img src="media/rotary.png" alt="UO logo">
-                    </a>
-                    <bar></bar>
-                    <div class="info">
-                        <div class="header">
-                            <div class="label">University of Oregon Rotaract</div>
-                            <div class="date">2017-20</div>
-                        </div>
-                        <div class="description">
-                            Rotaract is a volunteering organization affiliated with
-                            Rotary International.
-                        </div>
-                        <div class="description">
-                            Members work on projects to improve local and international
-                            communities, whether it is aiding the local food bank,
-                            cleaning up beaches, or raising money for disaster relief.
-                        </div>
-                        <div class="description">
-                            <ul><li>* Treasurer: 2019-20</li></ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="box red">
-                    <a href="https://www.avid.org/">
-                        <img src="media/avid.png" alt="AVID logo">
-                    </a>
-                    <bar></bar>
-                    <div class="info">
-                        <div class="header">
-                            <div class="label">AVID Tutor</div>
-                            <div class="date">2016-17</div>
-                        </div>
-                        <div class="description">
-                            Advancement via Individual Determination (AVID) is a
-                            program dedicated to providing students with the skills to
-                            succeed in school.
-                        </div>
-                        <div class="description">
-                            Tutors support students in the program,
-                            faciliating socratic discussions and providing guidance.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="box red">
-                    <a href="https://csfirst.withgoogle.com/s/en/home">
-                        <img src="media/cs-first.png" alt="Google CS First logo">
-                    </a>
-                    <bar></bar>
-                    <div class="info">
-                        <div class="header">
-                            <div class="label">Google CS First</div>
-                            <div class="date">2015</div>
-                        </div>
-                        <div class="description">
-                            A program provided by Google designed to teach the basics
-                            of computer science to young children via
-                            <a href="https://scratch.mit.edu/">Scratch</a>.
-                        </div>
-                        <div class="description">
-                            As a volunteer teaching this program, tracked student work,
-                            and provided students with guidance on their issues.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="box red">
-                    <a href="https://bgcportland.org/inukai/">
-                        <img src="media/bgc.png" alt="Boys & Girls Clubs logo">
-                    </a>
-                    <bar></bar>
-                    <div class="info">
-                        <div class="header">
-                            <div class="label">Inukai Family Boys & Girls Club</div>
-                            <div class="date">2014+15</div>
-                        </div>
-                        <div class="description">
-                            The Boys & Girls Clubs of America is a non-profit organization
-                            that provide school children with after school programs.
-                        </div>
-                        <div class="description">
-                            As a volunteer, performed supervision, led activities, and
-                            maintained technology rooms.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="padder"></div>
+        <div class="description">
+          I also like making art, some of which can be found
+          <a href="#works">here</a>. In my spare time, I like volunteering,
+          reading, and playing games.
         </div>
-
-        <div id="works-page" class="scroll page hidden blue">
-            <fade class="top"></fade>
-            <fade class="bottom"></fade>
-
-            <div class="corner">
-                <div class="home button">home</div>
-                <div class="about button">about</div>
-                <div class="works button disabled">
-                    <c class="blue">[</c>works<c class="blue">]</c>
-                </div>
-            </div>
-
-            <div class="padder"></div>
-
-            <div class="section">Selected Works</div>
-            <div class="info">
-                <div class="description">
-                    A collection of my best works.
-                    <i>Press images to view.</i>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="box blue">
-                    <a href="media/knight/index.html">
-                        <img src="media/knight.png" alt="Knight in the Dungeon screenshot">
-                    </a>
-                    <bar></bar>
-                    <div class="info">
-                        <div class="header">
-                            <div class="label">A Knight in the Dungeon</div>
-                            <div class="date">2020</div>
-                        </div>
-                        <div class="description">
-                            A 3rd person platformer-shooter.
-                        </div>
-                        <div class="description">
-                            Group project for the University of Oregon
-                            CIS 410: Game Programming course.
-                        </div>
-                        <div class="description">
-                            Personally responsible for leading the project,
-                            creating the art assets, and coding.
-                        </div>
-                        <div class="description">
-                            Concept art can be found <a href="media/knight-concept.pdf">here</a>.
-                        </div>
-                        <div class="description">
-                            <ul>
-                                <li>* Uses the <a href="https://unity.com/">Unity</a> game engine</li>
-                                <li>* Art/textures made in <a href="https://www.adobe.com/products/photoshop.html">Photoshop</a></li>
-                                <li>* 3D models made in <a href="https://www.blender.org/">Blender</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="box blue">
-                    <a href="media/requiem-compressed.pdf">
-                        <img src="media/requiem.png" alt="Requiem preview">
-                    </a>
-                    <bar></bar>
-                    <div class="info">
-                        <div class="header">
-                            <div class="label">Requiem</div>
-                            <div class="date">2020</div>
-                        </div>
-                        <div class="description">
-                            An image that conveys a short, circular narrative through
-                            a "rolling" perspective.
-                        </div>
-                        <div class="description">
-                            The piece pays homage to
-                            <a href="https://en.wikipedia.org/wiki/Alien_(film)"><i>Alien</i></a>.
-                        </div>
-                        <div class="description">
-                            Created for the University of Oregon ARTD 360: Digital Imaging course.
-                        </div>
-                        <div class="description">
-                            <ul>
-                                <li>* Made in <a href="https://www.adobe.com/products/photoshop.html">Photoshop</a></li>
-                                <li>* 3d models found and posed in <a href="https://gmod.facepunch.com/">Garry's Mod</a></li>
-                                <li>* Hallway panorama taken in Klamath Hall, University of Oregon</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="box blue">
-                    <a href="media/journey.pdf">
-                        <img src="media/journey.png" alt="Journey preview">
-                    </a>
-                    <bar></bar>
-                    <div class="info">
-                        <div class="header">
-                            <div class="label">Journey</div>
-                            <div class="date">2020</div>
-                        </div>
-                        <div class="description">
-                            An image series that provides an abstract portrayal
-                            of the <a href="https://en.wikipedia.org/wiki/Hero%27s_journey">hero's journey</a>.
-                        </div>
-                        <div class="description">
-                            Created for the University of Oregon ARTD 360: Digital Imaging course.
-                        </div>
-                        <div class="description">
-                            <ul>
-                                <li>* Made in <a href="https://www.adobe.com/products/photoshop.html">Photoshop</a></li>
-                                <li>* Images taken from the web</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="box blue">
-                    <a href="https://cat-mouse.web.app/">
-                        <img src="media/cat-mouse.png" alt="Cat + Mouse screenshot">
-                    </a>
-                    <bar></bar>
-                    <div class="info">
-                        <div class="header">
-                            <div class="label">Cat + Mouse</div>
-                            <div class="date">2019</div>
-                        </div>
-                        <div class="description">
-                            A minimalist audio toy that encourages exploration
-                            and emergent play.
-                        </div>
-                        <div class="description">
-                            If spoilers don't matter, full rules can be found
-                            <a href="https://bit.ly/37LaOuy">here</a>.
-                        </div>
-                        <div class="description">
-                            Created for the University of Oregon ARTD 252: Interactive Digital Arts course.
-                        </div>
-                        <div class="description">
-                            <ul>
-                                <li>* Created with <a href="https://reactjs.org/">ReactJS</a></li>
-                                <li>* Also had <a href="media/cat-mouse-input.jpg">physical input</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="box blue">
-                    <a href="https://youtu.be/0-JNbQ34j2I">
-                        <img src="media/paper.png" alt="Paper preview">
-                    </a>
-                    <bar></bar>
-                    <div class="info">
-                        <div class="header">
-                            <div class="label">Paper</div>
-                            <div class="date">2018</div>
-                        </div>
-                        <div class="description">
-                            A stop motion animation that follows
-                            the rise and fall of a civilization, commenting on its
-                            overconsumption of natural resources.
-                        </div>
-                        <div class="description">
-                            Created for the University of Oregon ARTD 251: Time-based Digital Arts course.
-                        </div>
-                        <div class="description">
-                            <ul>
-                                <li>* 739 unique frames</li>
-                                <li>* Edited in <a href="https://www.adobe.com/products/premiere.html">Premiere</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="padder"></div>
+        <div class="description">My interests include:</div>
+        <div class="description">
+          <ul>
+            <li>* Full stack development</li>
+            <li>* Game development + design</li>
+            <li>* Internet of things</li>
+            <li>* Deep learning AI</li>
+            <li>* Cloud computing</li>
+            <li>* UX/UI design</li>
+          </ul>
         </div>
-    </body>
+      </div>
+
+      <div class="section">Education</div>
+
+      <div class="container">
+        <div class="box red">
+          <a href="https://cs.uoregon.edu/">
+            <img src="media/uo.png" alt="UO logo" />
+          </a>
+          <bar></bar>
+          <div class="info">
+            <div class="header">
+              <div class="label">University of Oregon</div>
+              <div class="date">2017-20</div>
+            </div>
+            <div class="description">Bachelor of Science, Computer Science</div>
+            <div class="description">Minor: Multimedia</div>
+            <div class="description">
+              <ul>
+                <li>* Presidential Scholarship</li>
+                <li>* Summit Scholarship</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">Work Experience</div>
+
+      <div class="container">
+        <div class="box red">
+          <a href="https://www.microsoft.com/">
+            <img src="media/msft.png" alt="Microsoft logo" />
+          </a>
+          <bar></bar>
+          <div class="info">
+            <div class="header">
+              <div class="label">Software Engineer</div>
+              <div class="date">2020-Now</div>
+            </div>
+            <div class="description">
+              Making cool stuff as part of the Business Applications Group.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="box red">
+          <a href="https://www.intel.com/">
+            <img src="media/intel.png" alt="Intel logo" />
+          </a>
+          <bar></bar>
+          <div class="info">
+            <div class="header">
+              <div class="label">Software Engineering Intern</div>
+              <div class="date">Jun-Dec 2019</div>
+            </div>
+            <div class="description">
+              Developed a microservice agent that connects devices to various
+              internet of things cloud services, allowing for telemetry reports
+              and over the air updates of the device.
+            </div>
+            <div class="description">
+              Tech:
+              <a href="https://www.python.org/">Python</a>,
+              <a href="http://www.eclipse.org/paho/">MQTT</a>,
+              <a href="https://azure.microsoft.com/en-us/services/iot-central/"
+                >Azure</a
+              >,
+              <a
+                href="https://www.telit.com/m2m-iot-products/iot-platforms/telit-iot-portal/"
+                >Telit</a
+              >,
+              <a href="https://thingsboard.io/">ThingsBoard</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="box red">
+          <a href="https://www.cdkglobal.com/">
+            <img src="media/cdk.png" alt="CDK logo" />
+          </a>
+          <bar></bar>
+          <div class="info">
+            <div class="header">
+              <div class="label">Software Development Intern</div>
+              <div class="date">Jun-Aug 2018</div>
+            </div>
+            <div class="description">
+              Designed and developed dashboards for administrators to quickly
+              audit user permissions and activities.
+            </div>
+            <div class="description">
+              Refactored existing dashboards to improve performance and ensure
+              visual design language conformity.
+            </div>
+            <div class="description">
+              Tech:
+              <a href="https://angularjs.org/">AngularJS</a>,
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                >HTML</a
+              >,
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a
+              >, <a href="https://www.mongodb.com/">MongoDB</a>,
+              <a href="https://nodejs.org/en/">NodeJS</a>
+            </div>
+
+            <br /><br />
+
+            <div class="header">
+              <div class="label">Software Development Intern</div>
+              <div class="date">Jun-Sep 2017</div>
+            </div>
+            <div class="description">
+              Developed a microservice with a RESTful API to manage images from
+              customer repair orders on the cloud, integrating it into
+              preexisting software, and covering it with comprehensive unit
+              tests.
+            </div>
+            <div class="description">
+              Additionally, proactively prepared and presented a cost-benefit
+              analysis of moving towards serverless solutions.
+            </div>
+            <div class="description">
+              Tech:
+              <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a>,
+              <a href="https://github.com/Moq/moq4/wiki/Quickstart">Moq</a>,
+              <a href="https://aws.amazon.com/">AWS</a>
+            </div>
+
+            <br /><br />
+
+            <div class="header">
+              <div class="label">Software Development Intern</div>
+              <div class="date">Jun-Sep 2016</div>
+            </div>
+            <div class="description">
+              Developed a modular Google Chrome start page to bolster employee
+              productivity
+            </div>
+            <div class="description">
+              Tech:
+              <a href="https://angularjs.org/">AngularJS</a>,
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                >HTML</a
+              >,
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="box red">
+          <a href="https://www.intel.com/">
+            <img src="media/intel.png" alt="Intel logo" />
+          </a>
+          <bar></bar>
+          <div class="info">
+            <div class="header">
+              <div class="label">User Experience Intern</div>
+              <div class="date">Aug 2015</div>
+            </div>
+            <div class="description">
+              As part of a team, designed a wearable device that helps users
+              track and use medication. 3D modelled + printed the components,
+              integrating them with an Arduino and electrical components.
+            </div>
+            <div class="description">
+              Tech:
+              <a href="https://www.blender.org/">Blender</a>,
+              <a href="https://www.arduino.cc/">Arduino</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">Community Engagement</div>
+
+      <div class="container">
+        <div class="box red">
+          <a href="https://rotaractuo.weebly.com/">
+            <img src="media/rotary.png" alt="UO logo" />
+          </a>
+          <bar></bar>
+          <div class="info">
+            <div class="header">
+              <div class="label">University of Oregon Rotaract</div>
+              <div class="date">2017-20</div>
+            </div>
+            <div class="description">
+              Rotaract is a volunteering organization affiliated with Rotary
+              International.
+            </div>
+            <div class="description">
+              Members work on projects to improve local and international
+              communities, whether it is aiding the local food bank, cleaning up
+              beaches, or raising money for disaster relief.
+            </div>
+            <div class="description">
+              <ul>
+                <li>* Treasurer: 2019-20</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="box red">
+          <a href="https://www.avid.org/">
+            <img src="media/avid.png" alt="AVID logo" />
+          </a>
+          <bar></bar>
+          <div class="info">
+            <div class="header">
+              <div class="label">AVID Tutor</div>
+              <div class="date">2016-17</div>
+            </div>
+            <div class="description">
+              Advancement via Individual Determination (AVID) is a program
+              dedicated to providing students with the skills to succeed in
+              school.
+            </div>
+            <div class="description">
+              Tutors support students in the program, faciliating socratic
+              discussions and providing guidance.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="box red">
+          <a href="https://csfirst.withgoogle.com/s/en/home">
+            <img src="media/cs-first.png" alt="Google CS First logo" />
+          </a>
+          <bar></bar>
+          <div class="info">
+            <div class="header">
+              <div class="label">Google CS First</div>
+              <div class="date">2015</div>
+            </div>
+            <div class="description">
+              A program provided by Google designed to teach the basics of
+              computer science to young children via
+              <a href="https://scratch.mit.edu/">Scratch</a>.
+            </div>
+            <div class="description">
+              As a volunteer teaching this program, tracked student work, and
+              provided students with guidance on their issues.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="box red">
+          <a href="https://bgcportland.org/inukai/">
+            <img src="media/bgc.png" alt="Boys & Girls Clubs logo" />
+          </a>
+          <bar></bar>
+          <div class="info">
+            <div class="header">
+              <div class="label">Inukai Family Boys & Girls Club</div>
+              <div class="date">2014+15</div>
+            </div>
+            <div class="description">
+              The Boys & Girls Clubs of America is a non-profit organization
+              that provide school children with after school programs.
+            </div>
+            <div class="description">
+              As a volunteer, performed supervision, led activities, and
+              maintained technology rooms.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="padder"></div>
+    </div>
+
+    <div id="works-page" class="scroll page hidden blue">
+      <fade class="top"></fade>
+      <fade class="bottom"></fade>
+
+      <div class="corner">
+        <div class="home button">home</div>
+        <div class="about button">about</div>
+        <div class="works button disabled">
+          <c class="blue">[</c>works<c class="blue">]</c>
+        </div>
+      </div>
+
+      <div class="padder"></div>
+
+      <div class="section">Selected Works</div>
+      <div class="info">
+        <div class="description">
+          A collection of my best works.
+          <i>Press images to view.</i>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="box blue">
+          <a href="media/knight/index.html">
+            <img
+              src="media/knight.png"
+              alt="Knight in the Dungeon screenshot"
+            />
+          </a>
+          <bar></bar>
+          <div class="info">
+            <div class="header">
+              <div class="label">A Knight in the Dungeon</div>
+              <div class="date">2020</div>
+            </div>
+            <div class="description">A 3rd person platformer-shooter.</div>
+            <div class="description">
+              Group project for the University of Oregon CIS 410: Game
+              Programming course.
+            </div>
+            <div class="description">
+              Personally responsible for leading the project, creating the art
+              assets, and coding.
+            </div>
+            <div class="description">
+              Concept art can be found
+              <a href="media/knight-concept.pdf">here</a>.
+            </div>
+            <div class="description">
+              <ul>
+                <li>
+                  * Uses the <a href="https://unity.com/">Unity</a> game engine
+                </li>
+                <li>
+                  * Art/textures made in
+                  <a href="https://www.adobe.com/products/photoshop.html"
+                    >Photoshop</a
+                  >
+                </li>
+                <li>
+                  * 3D models made in
+                  <a href="https://www.blender.org/">Blender</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="box blue">
+          <a href="media/requiem-compressed.pdf">
+            <img src="media/requiem.png" alt="Requiem preview" />
+          </a>
+          <bar></bar>
+          <div class="info">
+            <div class="header">
+              <div class="label">Requiem</div>
+              <div class="date">2020</div>
+            </div>
+            <div class="description">
+              An image that conveys a short, circular narrative through a
+              "rolling" perspective.
+            </div>
+            <div class="description">
+              The piece pays homage to
+              <a href="https://en.wikipedia.org/wiki/Alien_(film)"
+                ><i>Alien</i></a
+              >.
+            </div>
+            <div class="description">
+              Created for the University of Oregon ARTD 360: Digital Imaging
+              course.
+            </div>
+            <div class="description">
+              <ul>
+                <li>
+                  * Made in
+                  <a href="https://www.adobe.com/products/photoshop.html"
+                    >Photoshop</a
+                  >
+                </li>
+                <li>
+                  * 3d models found and posed in
+                  <a href="https://gmod.facepunch.com/">Garry's Mod</a>
+                </li>
+                <li>
+                  * Hallway panorama taken in Klamath Hall, University of Oregon
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="box blue">
+          <a href="media/journey.pdf">
+            <img src="media/journey.png" alt="Journey preview" />
+          </a>
+          <bar></bar>
+          <div class="info">
+            <div class="header">
+              <div class="label">Journey</div>
+              <div class="date">2020</div>
+            </div>
+            <div class="description">
+              An image series that provides an abstract portrayal of the
+              <a href="https://en.wikipedia.org/wiki/Hero%27s_journey"
+                >hero's journey</a
+              >.
+            </div>
+            <div class="description">
+              Created for the University of Oregon ARTD 360: Digital Imaging
+              course.
+            </div>
+            <div class="description">
+              <ul>
+                <li>
+                  * Made in
+                  <a href="https://www.adobe.com/products/photoshop.html"
+                    >Photoshop</a
+                  >
+                </li>
+                <li>* Images taken from the web</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="box blue">
+          <a href="https://cat-mouse.web.app/">
+            <img src="media/cat-mouse.png" alt="Cat + Mouse screenshot" />
+          </a>
+          <bar></bar>
+          <div class="info">
+            <div class="header">
+              <div class="label">Cat + Mouse</div>
+              <div class="date">2019</div>
+            </div>
+            <div class="description">
+              A minimalist audio toy that encourages exploration and emergent
+              play.
+            </div>
+            <div class="description">
+              If spoilers don't matter, full rules can be found
+              <a href="https://bit.ly/37LaOuy">here</a>.
+            </div>
+            <div class="description">
+              Created for the University of Oregon ARTD 252: Interactive Digital
+              Arts course.
+            </div>
+            <div class="description">
+              <ul>
+                <li>
+                  * Created with <a href="https://reactjs.org/">ReactJS</a>
+                </li>
+                <li>
+                  * Also had
+                  <a href="media/cat-mouse-input.jpg">physical input</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="box blue">
+          <a href="https://youtu.be/0-JNbQ34j2I">
+            <img src="media/paper.png" alt="Paper preview" />
+          </a>
+          <bar></bar>
+          <div class="info">
+            <div class="header">
+              <div class="label">Paper</div>
+              <div class="date">2018</div>
+            </div>
+            <div class="description">
+              A stop motion animation that follows the rise and fall of a
+              civilization, commenting on its overconsumption of natural
+              resources.
+            </div>
+            <div class="description">
+              Created for the University of Oregon ARTD 251: Time-based Digital
+              Arts course.
+            </div>
+            <div class="description">
+              <ul>
+                <li>* 739 unique frames</li>
+                <li>
+                  * Edited in
+                  <a href="https://www.adobe.com/products/premiere.html"
+                    >Premiere</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="padder"></div>
+    </div>
+  </body>
 </html>

@@ -7,146 +7,146 @@
  * fix iOS flexbox height rendering issues
  */
 .box {
-    margin: 2rem;
-    padding: 1rem;
+  margin: 2rem;
+  padding: 1rem;
 
-    width: 640px;
-    max-width: calc(100vw - 6rem);
+  width: 640px;
+  max-width: calc(100vw - 6rem);
 
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 
-    border: dashed 2px var(--white);
-    box-sizing: border-box;
+  border: dashed 2px var(--white);
+  box-sizing: border-box;
 }
 
 .box.red {
-    border-color: var(--red);
+  border-color: var(--red);
 }
 
 .box.green {
-    border-color: var(--green);
+  border-color: var(--green);
 }
 
 .box.blue {
-    border-color: var(--blue);
+  border-color: var(--blue);
 }
 
 .box > a {
-    width: 128px;
-    height: 100%;
+  width: 128px;
+  height: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .box img {
-    width: 128px;
-    height: 128px;
-    object-fit: contain;
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
 }
 
 .box bar {
-    align-self: stretch;
-    box-sizing: border-box;
-    margin: 0 1.5ch;
-    border-left: dashed 2px var(--white);
+  align-self: stretch;
+  box-sizing: border-box;
+  margin: 0 1.5ch;
+  border-left: dashed 2px var(--white);
 }
 
 .box.red bar {
-    border-color: var(--red);
+  border-color: var(--red);
 }
 
 .box.blue bar {
-    border-color: var(--blue);
+  border-color: var(--blue);
 }
 
 .box.blue a {
-    width: 256px;
+  width: 256px;
 }
 
 .box.blue img {
-    height: 256px;
-    width: 256px;
-    border: solid 1px transparent;
-    transition: border linear 60ms;
+  height: 256px;
+  width: 256px;
+  border: solid 1px transparent;
+  transition: border linear 60ms;
 }
 
 .box.blue img:hover {
-    border: solid 1px var(--white);
+  border: solid 1px var(--white);
 }
 
 .info {
-    width: 640px;
-    max-width: calc(100vw - 6rem);
-    margin-bottom: 1rem;
+  width: 640px;
+  max-width: calc(100vw - 6rem);
+  margin-bottom: 1rem;
 }
 
 .box .info {
-    flex-grow: 1;
-    align-self: stretch;
-    margin: 0;
-    max-width: 100%;
+  flex-grow: 1;
+  align-self: stretch;
+  margin: 0;
+  max-width: 100%;
 }
 
 .info > .header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    font-style: italic;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-style: italic;
 }
 
 .info > .header > .label {
-    margin-right: 1ch;
+  margin-right: 1ch;
 }
 
 .info > .header > .date {
-    color: var(--lgrey);
+  color: var(--lgrey);
 }
 
 .info > .description {
-    margin-top: 1rem;
-    color: var(--lgrey);
+  margin-top: 1rem;
+  color: var(--lgrey);
 }
 
 @media only screen and (max-width: 600px) {
-    .box {
-        flex-flow: column nowrap;
-    }
+  .box {
+    flex-flow: column nowrap;
+  }
 
-    .box a {
-        width: 100%;
-        height: 128px;
-        margin-bottom: 1rem;
-        flex-grow: 0;
-    }
+  .box a {
+    width: 100%;
+    height: 128px;
+    margin-bottom: 1rem;
+    flex-grow: 0;
+  }
 
-    .box bar {
-        display: none;
-    }
+  .box bar {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 766px) {
-    .box.blue {
-        flex-flow: column nowrap;
-    }
+  .box.blue {
+    flex-flow: column nowrap;
+  }
 
-    .box.blue bar {
-        display: none;
-    }
+  .box.blue bar {
+    display: none;
+  }
 
-    .box.blue a {
-        width: 100%;
-        height: 256px;
-        margin-bottom: 1rem;
-    }
+  .box.blue a {
+    width: 100%;
+    height: 256px;
+    margin-bottom: 1rem;
+  }
 
-    .box.blue img {
-        height: auto;
-        max-width: 100%;
-    }
+  .box.blue img {
+    height: auto;
+    max-width: 100%;
+  }
 }
