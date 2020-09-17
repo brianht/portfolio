@@ -42,31 +42,31 @@ const resetContact = () => {
 
 const pageManager = new PageManager([
   new Page(
-    "#home",
+    "#/",
     document.getElementById("home-page"),
     document.getElementById("transition"),
     resetContact
   ),
   new Page(
-    "#about",
+    "#/about",
     document.getElementById("about-page"),
     document.getElementById("transition")
   ),
   new Page(
-    "#works",
+    "#/works",
     document.getElementById("works-page"),
     document.getElementById("transition")
   ),
 ]);
 
 Array.from(document.getElementsByClassName("home button")).forEach((button) =>
-  button.addEventListener("click", () => pageManager.setPage("#home"))
+  button.addEventListener("click", () => pageManager.setPage("#/"))
 );
 
 Array.from(document.getElementsByClassName("about button")).forEach((button) =>
-  button.addEventListener("click", () => pageManager.setPage("#about"))
+  button.addEventListener("click", () => pageManager.setPage("#/about"))
 );
 
 Array.from(document.getElementsByClassName("works button")).forEach((button) =>
-  button.addEventListener("click", () => pageManager.setPage("#works"))
+  button.addEventListener("click", () => pageManager.setPage("#/works"))
 );
