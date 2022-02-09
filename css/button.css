@@ -54,15 +54,16 @@
 .corner > .button {
   display: inline-block;
   margin: 0;
+  width: auto;
 }
 
 .corner > .home.button {
-  width: 6ch;
+  min-width: 6ch;
 }
 
 .corner > .about.button,
-.corner .works.button {
-  width: 7ch;
+.corner > .works.button {
+  min-width: 7ch;
 }
 
 .corner > .experience.button {
