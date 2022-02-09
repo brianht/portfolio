@@ -1,8 +1,8 @@
-# Personal Portfolio Website
+# brian.arcane-arts.net
 
 *Author: Brian Truong*
 
-Accessible at: [https://brianht.github.io/portfolio/](https://brianht.github.io/portfolio/)
+Personal portfolio website, accessible at: https://brian.arcane-arts.net
 
 ## License
 
