@@ -21,10 +21,9 @@ Array.from(document.getElementsByTagName("img")).forEach((image) =>
 // Email obfuscation
 
 const contacter = document.getElementById("contact");
-
 contacter.addEventListener("click", (event) => {
   let contact = "";
-  ["nairbhgnourt", "liamg@", "moc."].forEach((s) => {
+  ["nairb", "stra-enacra@", "ten."].forEach((s) => {
     contact += s.split("").reverse().join("");
   });
   setTimeout(() => {
