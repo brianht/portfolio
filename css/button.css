@@ -3,11 +3,15 @@
  *================*/
 
 .menu {
-  margin: 3rem 0 2rem;
+  margin-top: 3rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+}
+
+.menu .button {
+  margin-bottom: 2rem;
 }
 
 .button {
